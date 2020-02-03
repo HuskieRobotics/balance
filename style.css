@@ -1,0 +1,93 @@
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+#output {
+  position: absolute;
+  left: 2vw;
+}
+#grid {
+  display: grid;
+  position: absolute;
+  left: 2.5vw;
+  bottom: 0;
+  top: 50vh;
+  grid-template-columns: 100%;
+  height: 30vh;
+  width: 95vw;
+}
+
+.pos {
+  position: absolute;
+  bottom: -0.5vh;
+  left: 0;
+  transition: all 1s;
+}
+
+#switchContainer {
+  position: absolute;
+  left:0;
+  height: 70vh;
+  width: 100vw;
+  top: -30vh;
+  text-align: center;
+  transition: all 2s;
+}
+#switch {
+  height: 100%;
+  display: inline-block;
+  rotate: 15
+}
+.robot {
+  width: 100%;
+  height: 5vh;
+  display: block;
+  border: 1px solid black;
+  position: relative;
+}
+
+.robot input[type=number] {
+  width: 17vh;
+  margin: 0;
+  height: 4vh;
+  font-size: 2vh;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0.25vh;
+  -webkit-appearance: none;
+  border: 1px solid gray;
+}
+
+.robot input[type=number]:first-of-type {
+  left: 0;
+}
+
+.robot input[type=range] {
+  width: calc(95vw - 34vh);
+  margin: 0;
+  height: 5vh;
+  display: inline-block;
+  position: absolute;
+  right: 17vh;
+}
+.robot [type='range']::-webkit-slider-thumb {
+  transition: all 0.5s;
+}
+.robot p {
+  position: absolute;
+  bottom: -3vh;
+  right: 17vh;
+  width: calc(95vw - 34vh);
+  margin: 0;
+  font-size: 3vh;
+  text-align: center;
+
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

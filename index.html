@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="switchContainer">
+      <img src="switch.png" id="switch">
+      <p id="robot1pos" class="pos">1</p>
+      <p id="robot2pos" class="pos">2</p>
+      <p id="robot3pos" class="pos">3</p>
+    </div>
+
+    <div id="grid">
+      <div id="robot1" class="robot">
+        <input type="number" placeholder="weight (lbs)" id="robot1weight">
+        <input type="range" min="-57" max="57" id="robot1xRange">
+        <input type="number" min="-57.12500" max="57.12500" id="robot1xNumber" placeholder="Pos (in)">
+        <p id="robot1xCalculated"></p>
+      </div>
+
+      <div id="robot2" class="robot">
+        <input type="number" placeholder="weight (lbs)" id="robot2weight">
+        <input type="range" min="-57" max="57" id="robot2xRange">
+        <input type="number" min="-57.12500" max="57.12500" id="robot2xNumber" placeholder="Pos (in)">
+        <p id="robot2xCalculated"></p>
+      </div>
+
+      <div id="robot3" class="robot">
+        <input type="number" placeholder="weight (lbs)" id="robot3weight">
+        <input type="range" min="-57" max="57" id="robot3xRange">
+        <input type="number" min="-57.12500" max="57.12500" id="robot3xNumber" placeholder="Pos (in)">
+        <p id="robot3xCalculated"></p>
+      </div>
+    </div>
+    
+    <div id="output">
+      <p id="level">level: n/a</p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
